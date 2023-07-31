@@ -18,6 +18,7 @@ This recommendation system is special because it uses a hybrid approach, combini
 
 #### Step 4. In root directory launch a terminal and type   				 "docker compose up"
 
+#### Step 5. open up Browser and goto [localhost:4000](http://localhost:4000/) 
 ## FAQ
 
 ### Why did you choose to build an anime recommendation system?
