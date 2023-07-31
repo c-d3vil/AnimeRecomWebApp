@@ -8,6 +8,12 @@ This project is an anime recommendation system built using a combination of data
 This recommendation system is special because it uses a hybrid approach, combining genre-based and user-based recommendation strategies. This makes it more versatile. The system also integrates with the MyAnimeList API to provide detailed information about each recommended anime.  
 
 
+
+![pic1](https://github.com/c-d3vil/AnimeRecomWebApp/assets/132782518/04f751dc-b49e-4117-bbcb-72f18d05e874)
+
+![pic1](https://github.com/c-d3vil/AnimeRecomWebApp/assets/132782518/4f42996b-4f46-496f-a518-50b2244a72e9)
+
+
 ## STEPS TO LAUNCH
 
 #### Step 1. Install Docker
