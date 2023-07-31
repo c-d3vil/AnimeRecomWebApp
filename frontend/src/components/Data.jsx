@@ -1,3 +1,16 @@
+
+/**
+ * Data Component
+ *
+ * This component is responsible for displaying a collection of anime data.
+ * It takes a 'data' prop, which is an array of objects containing information about different animes.
+ * The component maps over this array, filtering out any null or undefined values,
+ * and renders individual cards for each anime. Each card displays information such as the title,
+ * genres, media type, and rating.
+ *
+ * Props:
+ *  - data: Array of objects containing anime information.
+ */
 import { useState } from "react";
 import axios from 'axios';
 import "./Data.css"

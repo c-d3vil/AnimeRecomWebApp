@@ -1,3 +1,26 @@
+
+/**
+ * SearchResult Component
+ *
+ * This component handles the functionality of a single search result in the application. 
+ * The component receives several props: 'result', 'setData', 'setLoading', 'setResults', and 'based'.
+ *
+ * The 'result' prop is an object that represents a single search result. It contains information 
+ * such as the id and name of the anime.
+ *
+ * The 'getFiles' function is defined within the component. This function performs a fetch request to the backend API, 
+ * passing the 'animeId' and the type of recommendation 'based' as parameters. The data received from the API is used 
+ * to update the 'setData' state, which triggers a re-render of the data display component.
+ *
+ * The 'getFiles' function is called when the search result div is clicked. The div displays the name of the anime.
+ *
+ * Props:
+ *  - result: Object containing a single search result.
+ *  - setData: Function to update the displayed anime data.
+ *  - setLoading: Function to update the loading state.
+ *  - setResults: Function to update the search results.
+ *  - based: Current search type.
+ */
 import "./SearchResult.css";
 
 export const SearchResult = ({ result, setData, setLoading, setResults, based }) => {

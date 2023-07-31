@@ -1,3 +1,30 @@
+
+/**
+ * SearchBar Component
+ *
+ * This component handles the functionality of the search bar in the application. 
+ * It contains a state variable 'input' for the search input and 'radioValue' for the selected radio button value.
+ * The component receives three props: 'setResults', 'setBased', and 'based'.
+ *
+ * It defines the function 'fetchData', which performs a fetch request to the backend API, 
+ * passing the search value as a parameter. The data received from the API is used to update the 'setResults' state,
+ * which triggers a re-render of the search results.
+ *
+ * The 'handleChange' function is called when the input value changes. It updates the 'input' state 
+ * and calls the 'fetchData' function with the new input value.
+ *
+ * The 'base' function is called when a radio button is selected. It updates the 'radioValue' state 
+ * and calls the 'setBased' function with the new radio button value depending whether user has chosen
+ * User Based or Genre Based Recommendation.
+ *
+ * The component's render function returns a div that contains an input field for the search input 
+ * and radio buttons to select the type of search.
+ *
+ * Props:
+ *  - setResults: Function to update the search results.
+ *  - setBased: Function to update the search type.
+ *  - based: Current search type.
+ */
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./SearchBar.css";
