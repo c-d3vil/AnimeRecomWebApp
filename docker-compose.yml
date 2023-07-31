@@ -1,0 +1,35 @@
+services:
+  db:
+    container_name: mongoDB
+    image: mongo
+    networks:
+      - main_network
+    ports:
+      - "27017:27017"
+  app:
+    container_name: pythonApp
+    build: 
+      context: ./backend/
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - main_network
+  frontend:
+    container_name: reactApp
+    build: 
+      context: ./frontend/
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    depends_on:
+      - app
+    networks:
+      - main_network
+   
+
+networks:
+  main_network:
+   
