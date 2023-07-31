@@ -11,7 +11,7 @@ This recommendation system is special because it uses a hybrid approach, combini
 
 ![pic1](https://github.com/c-d3vil/AnimeRecomWebApp/assets/132782518/04f751dc-b49e-4117-bbcb-72f18d05e874)
 
-![pic1](https://github.com/c-d3vil/AnimeRecomWebApp/assets/132782518/4f42996b-4f46-496f-a518-50b2244a72e9)
+![pic2](https://github.com/c-d3vil/AnimeRecomWebApp/assets/132782518/ddeaffe0-47c2-47fc-84d2-62a1255dfd07)
 
 
 ## STEPS TO LAUNCH
