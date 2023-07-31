@@ -1,18 +1,32 @@
 .App {
-  background-color: #eee;
+  /* background-color: #eee; */
   width: 100vw;
-  background-image: url("https://images2.alphacoders.com/131/1318225.png");
-  background-repeat: no-repeat;
+   /* This will make the background image fixed. */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: center;
 }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 .search-bar-container {
   padding-top: 20vh;
   width: 40%;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,14 +1,25 @@
 import "./SearchResult.css";
-import axios from 'axios';
 
-export const SearchResult = ({ result, setData }) => {
+export const SearchResult = ({ result, setData, setLoading, setResults, based }) => {
 
-  const getFiles = async (result) => {
+  const getFiles = async (animeId) => {
     try {
-      const response = await axios.get(`http://localhost:7190/recommend/${result}`);
+      setLoading(true)
+      setData([])
       
-      console.log(response.data)
-      setData(response.data.anime_recommendations)
+      const response = await fetch(`http://localhost:5000/recommend/${based}/${animeId}`);
+      
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      
+      // console.log(data)
+      setLoading(false)
+      setData(data)
+      setResults([]);
+      
     } catch (error) {
       console.error('Error getting files', error);
     }
@@ -17,9 +28,9 @@ export const SearchResult = ({ result, setData }) => {
   return (
     <div
       className="search-result"
-      onClick={() => getFiles(result)}
+      onClick={() => getFiles(result.id)}
     >
-      {result}
+      {result.name}
     </div>
   );
 };

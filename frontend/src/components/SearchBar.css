@@ -26,3 +26,20 @@ input:focus {
 #search-icon {
   color: royalblue;
 }
+
+.radio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: wheat;
+}
+
+.radio-wrapper div {
+  display: flex;
+  align-items: center;
+}
+
+.radio-wrapper label {
+  margin-left: 10px;
+}
+
