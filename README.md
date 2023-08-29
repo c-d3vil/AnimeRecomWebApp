@@ -1,11 +1,8 @@
-
 # Anime Recommendation System
 
 ## Project Description
 
-This project is an anime recommendation system built using a combination of data from MyAnimeList and a custom-trained recommendation model. The goal of this project is to provide anime enthusiasts with a tool to discover new animes that align with their preferences.
-
-This recommendation system is special because it uses a hybrid approach, combining genre-based and user-based recommendation strategies. This makes it more versatile. The system also integrates with the MyAnimeList API to provide detailed information about each recommended anime.  
+Welcome to the Anime Recommendation System! This project is designed to assist anime enthusiasts in discovering new and exciting anime titles that align with their preferences. By leveraging both data from MyAnimeList and a custom-trained recommendation model, this system offers a unique blend of genre-based and user-based recommendation strategies, enhancing its versatility and accuracy. Additionally, the integration of the MyAnimeList API enriches the user experience by providing detailed information about each recommended anime.
 
 
 
@@ -16,15 +13,28 @@ This recommendation system is special because it uses a hybrid approach, combini
 
 ## STEPS TO LAUNCH
 
-#### Step 1. Install Docker
+#### Step 1. Install Docker: Ensure you have Docker installed on your system.
 
-#### Step 2. Clone the REPO
+#### Step 1.5. Install Git LFS: If you haven't already, install Git LFS (Large File Storage) on your system. This is necessary to clone the repository and its large files successfully.
 
-#### Step 3. Get A client ID from [Myanimelist](https://myanimelist.net) and put it in the /backend/MALcred.py file.
+#### Step 2. Clone the Repository: Use Git LFS to clone this repository to your local machine. Run the command: git lfs clone https://github.com/yourusername/anime-recommendation.git
+
+#### Step 3. Obtain A client ID from [Myanimelist](https://myanimelist.net) and insert it in the /backend/MALcred.py file.
 
 #### Step 4. In root directory launch a terminal and type   				 "docker compose up"
 
 #### Step 5. open up Browser and goto [localhost:4000](http://localhost:4000/) 
+
+## Limitations
+
+While the Anime Recommendation System offers valuable insights into discovering new anime titles, it's important to be aware of the following limitations:
+
+##### Limited Database Update: The anime database used within this system is updated only until the year 2020. As a result, newer anime titles released after this year might not be included in the recommendations.
+
+##### Overlap Between User-Based and Genre-Based Recommendations: In cases where the user-based recommendation model cannot confidently determine personalized suggestions for a user, there might be instances where both the user-based and genre-based recommendations yield similar results.
+
+##### User-Based Recommendation Criteria: The user-based recommendation model is designed to consider a user's preferences only if they have watched a minimum of 150 or more anime titles. Consequently, users with fewer anime views might not benefit fully from the personalized recommendations provided by this model.
+
 ## FAQ
 
 ### Why did you choose to build an anime recommendation system?
@@ -33,11 +43,9 @@ Anime is a unique and diverse form of entertainment with a global fanbase. Howev
 
 ### What makes this recommendation system special?
 
-This recommendation system is special for a few reasons:
+###### Hybrid Approach: By fusing genre-based and user-based recommendations, this system excels in capturing both content and collaborative aspects. This results in more precise and varied anime suggestions.
 
-1. It uses a hybrid approach, combining genre-based and user-based recommendations. This allows it to capture both the content and collaborative aspects of recommendation systems, providing more accurate and diverse recommendations.
-
-2. It integrates with the MyAnimeList API, providing users with detailed information about each recommended anime.
+###### MyAnimeList API Integration: The system seamlessly integrates with the MyAnimeList API, offering users comprehensive information about each recommended anime.
 
 
 # Additional Informartion

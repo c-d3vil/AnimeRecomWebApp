@@ -1,31 +1,31 @@
 services:
-  db:
-    container_name: mongoDB
+  sinha_db:
+    container_name: sinha_mongoDB
     image: mongo
     networks:
       - main_network
     ports:
       - "27017:27017"
-  app:
-    container_name: pythonApp
+  sinha_backend:
+    container_name: sinha_backend_app
     build: 
       context: ./backend/
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "9099:9099"
     depends_on:
-      - db
+      - sinha_db
     networks:
       - main_network
-  frontend:
-    container_name: reactApp
+  sinha_frontend:
+    container_name: sinha_frontend_app
     build: 
       context: ./frontend/
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
     depends_on:
-      - app
+      - sinha_backend
     networks:
       - main_network
    

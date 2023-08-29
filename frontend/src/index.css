@@ -4,8 +4,8 @@
 }
 
 html {
-  background-image: url("https://images2.alphacoders.com/131/1318225.png");
+  background-image: url("bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* To make sure the image covers the full view. */
+  background-size: cover; 
   background-attachment: fixed;
 }

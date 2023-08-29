@@ -30,7 +30,7 @@ export const SearchResult = ({ result, setData, setLoading, setResults, based })
       setLoading(true)
       setData([])
       
-      const response = await fetch(`http://localhost:5000/recommend/${based}/${animeId}`);
+      const response = await fetch(`http://localhost:9099/recommend/${based}/${animeId}`);
       
       if (!response.ok) {
         throw new Error('Network response was not ok');

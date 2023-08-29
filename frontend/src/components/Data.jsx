@@ -11,8 +11,6 @@
  * Props:
  *  - data: Array of objects containing anime information.
  */
-import { useState } from "react";
-import axios from 'axios';
 import "./Data.css"
 
 export const Data = ({ data}) => {

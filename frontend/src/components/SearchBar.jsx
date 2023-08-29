@@ -35,7 +35,7 @@ export const SearchBar = ({ setResults, setBased, based }) => {
 
   const fetchData = async (value) => {
     try {
-      const response = await fetch(`http://localhost:5000/search/${value}`);
+      const response = await fetch(`http://localhost:9099/search/${value}`);
       
       if (!response.ok) {
         throw new Error('Network response was not ok');

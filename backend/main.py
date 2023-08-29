@@ -30,7 +30,7 @@ Connecting to MongoDB and Uploading Anime Data
 that will be used to provide name suggestions
 or other required info to the user
 '''
-client = MongoClient('mongodb://db:27017/')
+client = MongoClient('mongodb://sinha_db:27017/')
 db = client["animeDB"]
 collection = db["animeDataCollection"]
 collection.insert_many(anime.to_dict('records'))
