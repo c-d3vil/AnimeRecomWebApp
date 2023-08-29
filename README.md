@@ -17,7 +17,7 @@ Welcome to the Anime Recommendation System! This project is designed to assist a
 
 #### Step 1.5. Install Git LFS: If you haven't already, install Git LFS (Large File Storage) on your system. This is necessary to clone the repository and its large files successfully.
 
-#### Step 2. Clone the Repository: Use Git LFS to clone this repository to your local machine. Run the command: git lfs clone https://github.com/yourusername/anime-recommendation.git
+#### Step 2. Clone the Repository: Use Git LFS to clone this repository to your local machine. Run the command: git lfs clone https://github.com/c-d3vil/AnimeRecomWebApp.git
 
 #### Step 3. Obtain A client ID from [Myanimelist](https://myanimelist.net) and insert it in the /backend/MALcred.py file.
 
