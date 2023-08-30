@@ -53,11 +53,11 @@ Anime is a unique and diverse form of entertainment with a global fanbase. Howev
 ## Resources used (Third-Party) :
 
 ### 1. Myanimelist Dataset:
-		i.  [Anime.csv](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
-		ii. [Rating.csv](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
+i.  [Anime.csv](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
+ii. [Rating.csv](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
 
 ### 2. MAL API : 
-		[MAL API](https://myanimelist.net/apiconfig/references/api/v2)
+[MAL API](https://myanimelist.net/apiconfig/references/api/v2)
 		
 ## Tools used :
 ## 
